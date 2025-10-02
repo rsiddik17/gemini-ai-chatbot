@@ -1,6 +1,6 @@
 import ai from '../config/gemini.js';
 
-export const chatController = async (req, res) => {
+export const generateFromChat = async (req, res) => {
   const { prompt } = req.body;
 
   if (!prompt || typeof prompt !== 'string') {
