@@ -30,7 +30,6 @@ const allowedTypes = [
   "audio/webm", // .webm
 ];
 
-// filter hanya gambar
 const fileFilter = (req, file, cb) => {
   if (allowedTypes.includes(file.mimetype)) {
     cb(null, true);

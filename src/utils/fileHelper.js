@@ -5,7 +5,6 @@ export const fileToBase64 = (filePath) => {
   return file.toString('base64');
 };
 
-// delete setelah dipakai
 export const cleanupFile = (filePath) => {
   try {
     fs.unlinkSync(filePath);
